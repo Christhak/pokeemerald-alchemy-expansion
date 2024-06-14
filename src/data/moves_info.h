@@ -19816,6 +19816,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         }),
     },
 
+    [MOVE_FIREBALL] =
+{
+    .name = COMPOUND_STRING("Fireball"),
+    .description = COMPOUND_STRING(
+        "A strong fire attack that may\n"
+        "inflict a burn."),
+    .effect = EFFECT_HIT,
+    .power = 80,  // Example power, you can adjust as needed
+    .type = TYPE_FIRE,
+    .accuracy = 90,  // Example accuracy, you can adjust as needed
+    .pp = 15,  // Example PP, you can adjust as needed
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .category = DAMAGE_CATEGORY_SPECIAL,
+    .additionalEffects = ADDITIONAL_EFFECTS({
+        .moveEffect = MOVE_EFFECT_BURN,
+        .chance = 20,  // Example burn chance, you can adjust as needed
+    }),
+    .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+    .contestCategory = CONTEST_CATEGORY_BEAUTY,
+    .contestComboStarterId = 0,
+    .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
+},
+
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

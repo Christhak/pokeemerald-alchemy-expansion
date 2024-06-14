@@ -20978,6 +20978,7 @@ static const u16 sArceusTeachableLearnset[] = {
 
 #if P_FAMILY_VICTINI
 static const u16 sVictiniTeachableLearnset[] = {
+    MOVE_FIREBALL,
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,

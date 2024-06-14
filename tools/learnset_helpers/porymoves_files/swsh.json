@@ -39286,75 +39286,75 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_V_CREATE"
+        "Move": "MOVE_FIREBALL"
       },
       {
         "Level": 1,
-        "Move": "MOVE_QUICK_ATTACK"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_FLAME_CHARGE"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_CONFUSION"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_FOCUS_ENERGY"
-      },
-      {
-        "Level": 7,
-        "Move": "MOVE_WORK_UP"
-      },
-      {
-        "Level": 14,
-        "Move": "MOVE_INCINERATE"
-      },
-      {
-        "Level": 21,
-        "Move": "MOVE_STORED_POWER"
-      },
-      {
-        "Level": 28,
-        "Move": "MOVE_HEADBUTT"
-      },
-      {
-        "Level": 35,
-        "Move": "MOVE_ENDURE"
-      },
-      {
-        "Level": 42,
-        "Move": "MOVE_ZEN_HEADBUTT"
-      },
-      {
-        "Level": 49,
-        "Move": "MOVE_INFERNO"
-      },
-      {
-        "Level": 56,
-        "Move": "MOVE_REVERSAL"
-      },
-      {
-        "Level": 63,
         "Move": "MOVE_SEARING_SHOT"
       },
       {
-        "Level": 70,
-        "Move": "MOVE_DOUBLE_EDGE"
+        "Level": 82,
+        "Move": "MOVE_FOCUS_ENERGY"
       },
       {
-        "Level": 77,
-        "Move": "MOVE_FLARE_BLITZ"
+        "Level": 83,
+        "Move": "MOVE_CONFUSION"
       },
       {
         "Level": 84,
-        "Move": "MOVE_OVERHEAT"
+        "Move": "MOVE_INCINERATE"
+      },
+      {
+        "Level": 85,
+        "Move": "MOVE_QUICK_ATTACK"
+      },
+      {
+        "Level": 86,
+        "Move": "MOVE_ENDURE"
+      },
+      {
+        "Level": 87,
+        "Move": "MOVE_HEADBUTT"
+      },
+      {
+        "Level": 88,
+        "Move": "MOVE_FLAME_CHARGE"
+      },
+      {
+        "Level": 89,
+        "Move": "MOVE_REVERSAL"
+      },
+      {
+        "Level": 90,
+        "Move": "MOVE_FLAME_BURST"
       },
       {
         "Level": 91,
+        "Move": "MOVE_ZEN_HEADBUTT"
+      },
+      {
+        "Level": 92,
+        "Move": "MOVE_INFERNO"
+      },
+      {
+        "Level": 93,
+        "Move": "MOVE_DOUBLE_EDGE"
+      },
+      {
+        "Level": 94,
+        "Move": "MOVE_FLARE_BLITZ"
+      },
+      {
+        "Level": 95,
         "Move": "MOVE_FINAL_GAMBIT"
+      },
+      {
+        "Level": 96,
+        "Move": "MOVE_STORED_POWER"
+      },
+      {
+        "Level": 97,
+        "Move": "MOVE_OVERHEAT"
       }
     ],
     "PreEvoMoves": [],

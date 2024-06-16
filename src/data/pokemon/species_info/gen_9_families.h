@@ -6790,6 +6790,65 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     },
 #endif //P_FAMILY_PECHARUNT
 
+#if P_FAMILY_MAGE
+[SPECIES_MAGE] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 100,
+        .baseDefense   = 100,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_FIRE,TYPE_FIRE),
+        .catchRate = 255,
+        .expYield = 240,
+        .evYield_HP = 1,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = MAX_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_FLAME_BODY , ABILITY_FLAME_BODY, ABILITY_FLAME_BODY },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Mage"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_MAGE,
+        .categoryName = _("Flame"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "Mages conjure magical spells using sorcery,\n"
+            "the darkness in the duality of alchemical arts.\n"
+            "By focusing their superior intellect, Mages\n"
+            "strike and blast their enemies with rapid, opportune attacks."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Mage,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        .backPic = gMonBackPic_Mage,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Mage,
+        .shinyPalette = gMonShinyPalette_Mage,
+        .shinyPaletteFemale = gMonShinyPalette_Mage,
+        .iconSprite = gMonIcon_Mage,
+        .iconPalIndexFemale = 1,
+        FOOTPRINT(Mage)
+        .levelUpLearnset = sMageLevelUpLearnset,
+        .teachableLearnset = sMageTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 100, SPECIES_NONE},
+                                {EVO_ITEM, ITEM_MOOMOO_MILK, SPECIES_NONE}),
+        .allPerfectIVs = TRUE,
+    },
+    #endif //P_FAMILY_MAGE
+
 #ifdef __INTELLISENSE__
 };
 #endif

@@ -19851,3 +19851,10 @@ static const struct LevelUpMove sPecharuntLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PECHARUNT
 
+#if P_FAMILY_MAGE
+static const struct LevelUpMove sMageLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FIREBALL),
+    LEVEL_UP_MOVE( 1, MOVE_SEARING_SHOT),
+    LEVEL_UP_END
+};
+#endif //P_FAMILY_MAGE

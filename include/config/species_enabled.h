@@ -603,5 +603,5 @@
 #define P_FAMILY_IRON_CROWN              P_GEN_9_POKEMON
 #define P_FAMILY_TERAPAGOS               P_GEN_9_POKEMON
 #define P_FAMILY_PECHARUNT               P_GEN_9_POKEMON
-
+#define P_FAMILY_MAGE               P_GEN_9_POKEMON
 #endif // GUARD_CONFIG_SPECIES_ENABLED_H

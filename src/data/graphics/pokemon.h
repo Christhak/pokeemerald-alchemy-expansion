@@ -13065,6 +13065,19 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_PECHARUNT
 
+#if P_FAMILY_MAGE
+    const u32 gMonFrontPic_Mage[] = INCBIN_U32("graphics/pokemon/mage/front.4bpp.lz");
+    const u32 gMonPalette_Mage[] = INCBIN_U32("graphics/pokemon/mage/normal.gbapal.lz");
+    const u32 gMonBackPic_Mage[] = INCBIN_U32("graphics/pokemon/mage/back.4bpp.lz");
+    const u32 gMonShinyPalette_Mage[] = INCBIN_U32("graphics/pokemon/mage/shiny.gbapal.lz");
+    const u8 gMonIcon_Mage[] = INCBIN_U8("graphics/pokemon/mage/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Mage[] = INCBIN_U8("graphics/pokemon/pecharunt/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#endif //P_MAGE
+
+
+
     const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
     const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
     const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");

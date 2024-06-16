@@ -82,6 +82,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconPalIndex = 1,
     },
 
+
+
+
+
     /* You may add any custom species below this point based on the following structure: */
 
     /*

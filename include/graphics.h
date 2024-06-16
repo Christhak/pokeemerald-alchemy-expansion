@@ -3350,4 +3350,12 @@ extern const u8 gMailTilemap_Retro[];
 extern const u8 gMonMarkingsMenu_Gfx[];
 extern const u16 gMonMarkingsMenu_Pal[];
 
+extern const u32 gMonFrontPic_Mage[];
+extern const u32 gMonPalette_Mage[];
+extern const u32 gMonBackPic_Mage[];
+extern const u32 gMonShinyPalette_Mage[];
+extern const u8 gMonIcon_Mage[];
+extern const u8 gMonFootprint_Mage[];
+
+
 #endif //GUARD_GRAPHICS_H

@@ -2426,6 +2426,9 @@ enum {
 #if P_FAMILY_PECHARUNT
     CRY_PECHARUNT,
 #endif //P_FAMILY_PECHARUNT
+#if P_FAMILY_MAGE
+    CRY_MAGE,
+#endif //P_FAMILY_MAGE
     CRY_COUNT,
 };
 

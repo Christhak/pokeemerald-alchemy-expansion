@@ -20978,7 +20978,6 @@ static const u16 sArceusTeachableLearnset[] = {
 
 #if P_FAMILY_VICTINI
 static const u16 sVictiniTeachableLearnset[] = {
-    MOVE_FIREBALL,
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -35838,4 +35837,12 @@ static const u16 sPecharuntTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PECHARUNT
+#endif
+
+#if P_FAMILY_MAGE
+static const u16 sMageTeachableLearnset[] = {
+    MOVE_FIREBALL,
+    MOVE_UNAVAILABLE,
+};
+
+#endif //MAGE

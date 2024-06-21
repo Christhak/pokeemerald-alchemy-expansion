@@ -19840,6 +19840,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
 },
 
+[MOVE_FLAMEBREATH] =
+    {
+        .name = COMPOUND_STRING("Aeroblast"),
+        .description = COMPOUND_STRING(
+            "Does double damage if the\n"
+            "foe has a BURN status."),
+        .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,
+        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 65 : 50,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 69,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .zMove = { .powerOverride = 160 },
+        .argument = STATUS1_BURN,
+        .contestEffect = CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_TOXIC},
+    },
 
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =

@@ -8747,7 +8747,7 @@ static const struct LevelUpMove sVictiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SEARING_SHOT),
     LEVEL_UP_MOVE(82, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(83, MOVE_CONFUSION),
-    LEVEL_UP_MOVE(84, MOVE_INCINERATE),
+    LEVEL_UP_MOVE(1, MOVE_INCINERATE),
     LEVEL_UP_MOVE(85, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(86, MOVE_ENDURE),
     LEVEL_UP_MOVE(87, MOVE_HEADBUTT),
@@ -19854,7 +19854,8 @@ static const struct LevelUpMove sPecharuntLevelUpLearnset[] = {
 #if P_FAMILY_MAGE
 static const struct LevelUpMove sMageLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FIREBALL),
-    LEVEL_UP_MOVE( 1, MOVE_SEARING_SHOT),
+    LEVEL_UP_MOVE( 1, MOVE_FLAMEBREATH),
+    LEVEL_UP_MOVE( 99, MOVE_SEARING_SHOT),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MAGE

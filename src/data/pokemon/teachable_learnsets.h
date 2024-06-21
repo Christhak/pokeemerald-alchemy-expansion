@@ -35842,6 +35842,7 @@ static const u16 sPecharuntTeachableLearnset[] = {
 #if P_FAMILY_MAGE
 static const u16 sMageTeachableLearnset[] = {
     MOVE_FIREBALL,
+    MOVE_FLAMEBREATH,
     MOVE_UNAVAILABLE,
 };
 

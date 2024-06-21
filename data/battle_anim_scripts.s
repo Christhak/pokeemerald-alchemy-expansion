@@ -876,6 +876,7 @@ gBattleAnims_Moves::
 	.4byte Move_UPPER_HAND
 	.4byte Move_MALIGNANT_CHAIN
 	.4byte Move_FIREBALL
+	.4byte Move_FLAMEBREATH
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -18417,6 +18418,48 @@ Move_FIREBALL:
 EmberFireHit:
 	createsprite gEmberFlareSpriteTemplate, ANIM_TARGET, 2, -24, 24, 24, 24, 20, ANIM_TARGET, 1
 	delay 4
+	return
+
+Move_FLAMEBREATH:
+	loadspritegfx ANIM_TAG_SMALL_EMBER
+	monbg ANIM_DEF_PARTNER
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 0, 2, 46, 1
+	delay 6
+	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	panse SE_M_FLAMETHROWER, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
+	call FlameBreathCreateFlames
+	call FlameBreathCreateFlames;
+
+	call FlameBreathCreateFlames;
+
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 43, 1
+	call FlameBreathCreateFlames;
+
+	call FlameBreathCreateFlames;
+
+	call FlameBreathCreateFlames;
+
+	call FlameBreathCreateFlames;
+
+	call FlameBreathCreateFlames;
+
+	call FlameBreathCreateFlames;
+
+	call FlameBreathCreateFlames;
+
+	call FlameBreathCreateFlames;
+
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	end
+FlameBreathCreateFlames:
+	createsprite gFlamethrowerFlameSpriteTemplate, ANIM_ATTACKER, 3, 10, 10, 0, 16
+	delay 2
+	createsprite gFlamethrowerFlameSpriteTemplate, ANIM_ATTACKER, 3, 10, 10, 0, 16
+	delay 2
 	return
 
 SetImpactBackground:

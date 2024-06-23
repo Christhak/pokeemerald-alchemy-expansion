@@ -2429,6 +2429,9 @@ enum {
 #if P_FAMILY_MAGE
     CRY_MAGE,
 #endif //P_FAMILY_MAGE
+#if P_FAMILY_SQUIRE
+    CRY_SQUIRE,
+#endif //P_FAMILY_SQUIRE
     CRY_COUNT,
 };
 

@@ -2426,7 +2426,9 @@ gCryTable::
 .if P_FAMILY_MAGE == TRUE
 	cry Cry_Mage
 .endif @ P_FAMILY_MAGE
-
+.if P_FAMILY_SQUIRE == TRUE
+	cry Cry_Squire
+.endif @ P_FAMILY_SQUIRE
 
 	.align 2
 gCryTable_Reverse::
@@ -4856,3 +4858,6 @@ gCryTable_Reverse::
 .if P_FAMILY_MAGE == TRUE
 	cry_reverse Cry_Mage
 .endif @ P_FAMILY_MAGE
+.if P_FAMILY_SQUIRE == TRUE
+	cry_reverse Cry_Squire
+.endif @ P_FAMILY_SQUIRE

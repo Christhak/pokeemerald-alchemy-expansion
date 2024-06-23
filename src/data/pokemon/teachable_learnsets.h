@@ -35837,7 +35837,7 @@ static const u16 sPecharuntTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_UNAVAILABLE,
 };
-#endif
+#endif //PECHARUNT
 
 #if P_FAMILY_MAGE
 static const u16 sMageTeachableLearnset[] = {
@@ -35847,3 +35847,12 @@ static const u16 sMageTeachableLearnset[] = {
 };
 
 #endif //MAGE
+
+#if P_FAMILY_SQUIRE
+static const u16 sSquireTeachableLearnset[] = {
+    MOVE_FIREBALL,
+    MOVE_FLAMEBREATH,
+    MOVE_UNAVAILABLE,
+};
+
+#endif //SQUIRE

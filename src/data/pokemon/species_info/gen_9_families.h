@@ -6848,7 +6848,66 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .allPerfectIVs = TRUE,
     },
     #endif //P_FAMILY_MAGE
-
+    
+#if P_FAMILY_SQUIRE
+[SPECIES_SQUIRE] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 100,
+        .baseDefense   = 100,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_FIRE,TYPE_FIRE),
+        .catchRate = 255,
+        .expYield = 240,
+        .evYield_HP = 1,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = MAX_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_FLAME_BODY , ABILITY_FLAME_BODY, ABILITY_FLAME_BODY },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Squire"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_SQUIRE,
+        .categoryName = _("Flame"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "Squires are well-versed in the blade and shield,\n"
+            "praised for their strength and valor both in battle and among their comrades.\n"
+            "Specializing in hand-to-hand combat,\n"
+            "Squires strive to defend through a strong offense, balancing reaching blows with precise movement."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Squire,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        .backPic = gMonBackPic_Squire,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Squire,
+        .shinyPalette = gMonShinyPalette_Squire,
+        .shinyPaletteFemale = gMonShinyPalette_Squire,
+        .iconSprite = gMonIcon_Squire,
+        .iconPalIndexFemale = 1,
+        FOOTPRINT(Squire)
+        .levelUpLearnset = sSquireLevelUpLearnset,
+        .teachableLearnset = sSquireTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 100, SPECIES_NONE},
+                                {EVO_ITEM, ITEM_MOOMOO_MILK, SPECIES_NONE}),
+        .allPerfectIVs = TRUE,
+    },
+    #endif //P_FAMILY_SQUIRE
+    
 #ifdef __INTELLISENSE__
 };
 #endif

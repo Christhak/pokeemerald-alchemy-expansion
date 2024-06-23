@@ -6160,7 +6160,11 @@ Cry_Mage::
 	.incbin "sound/direct_sound_samples/cries/pecharunt.bin"
 .endif @ P_FAMILY_MAGE
 	.align 2
-	
+.if P_FAMILY_SQUIRE == TRUE
+Cry_Squire::
+	.incbin "sound/direct_sound_samples/cries/pecharunt.bin"
+.endif @ P_FAMILY_SQUIRE
+	.align 2	
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

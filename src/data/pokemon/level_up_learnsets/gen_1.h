@@ -19858,4 +19858,13 @@ static const struct LevelUpMove sMageLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 99, MOVE_SEARING_SHOT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MAGE
+#endif //
+
+#if P_FAMILY_SQUIRE
+static const u16 sSquireLevelUpLearnset[] = {
+    MOVE_FIREBALL,
+    MOVE_FLAMEBREATH,
+    MOVE_UNAVAILABLE,
+};
+
+#endif //SQUIRE

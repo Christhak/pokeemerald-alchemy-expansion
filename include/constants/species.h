@@ -1629,8 +1629,9 @@
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GIGANTAMAX   1522
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    1523
 #define SPECIES_MAGE                                    1524
+#define SPECIES_SQUIRE                                  1525
 
-#define SPECIES_EGG SPECIES_MAGE + 1
+#define SPECIES_EGG SPECIES_SQUIRE + 1
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -13076,6 +13076,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_MAGE
 
+#if P_FAMILY_SQUIRE
+    const u32 gMonFrontPic_Squire[] = INCBIN_U32("graphics/pokemon/squire/front.4bpp.lz");
+    const u32 gMonPalette_Squire[] = INCBIN_U32("graphics/pokemon/squire/normal.gbapal.lz");
+    const u32 gMonBackPic_Squire[] = INCBIN_U32("graphics/pokemon/squire/back.4bpp.lz");
+    const u32 gMonShinyPalette_Squire[] = INCBIN_U32("graphics/pokemon/squire/shiny.gbapal.lz");
+    const u8 gMonIcon_Squire[] = INCBIN_U8("graphics/pokemon/squire/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Squire[] = INCBIN_U8("graphics/pokemon/pecharunt/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#endif //P_SQUIRE
 
 
     const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");

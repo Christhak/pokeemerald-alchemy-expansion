@@ -1,4 +1,23 @@
 raw `
 Descend_MapScripts::
 	.byte 0
+
+Descend_EventScript_SelfPathSign::
+	msgbox Descend_Text_SelfPathSign, MSGBOX_SIGN
+	end
+
+	Descend_Text_SelfPathSign:
+	.string "On the path of the Self.$"
+
+Descend_EventScript_AllPathSign::
+	msgbox Descend_Text_AllPathSign, MSGBOX_SIGN
+	end
+
+	Descend_Text_AllPathSign:
+	.string "On the path of the All.$"
+
+	
+
+
+
 `

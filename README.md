@@ -1,5 +1,5 @@
-#Started June 12, 2024
+Started June 12, 2024
 
-#Alchemy Expansion
+Alchemy Expansion
 
-#Used pokeemerald-expansion 1.8.4 as the base rom
+Used pokeemerald-expansion 1.8.4 as the base rom

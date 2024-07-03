@@ -151,8 +151,8 @@
       "x": 14,
       "y": 18,
       "elevation": 0,
-      "dest_map": "MAP_DESCEND",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_ENCHANTED_FOREST",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

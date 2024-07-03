@@ -64,6 +64,9 @@
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
 #define MAP_DESCEND             (57 | (0 << 8))
+#define MAP_ENCHANTED_FOREST    (58 | (0 << 8))
+#define MAP_NEW_MAP1            (59 | (0 << 8))
+#define MAP_NEW_MAP2            (60 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

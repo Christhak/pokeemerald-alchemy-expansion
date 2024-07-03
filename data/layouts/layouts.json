@@ -4420,6 +4420,36 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/Descend/border.bin",
       "blockdata_filepath": "data/layouts/Descend/map.bin"
+    },
+    {
+      "id": "LAYOUT_ENCHANTED_FOREST",
+      "name": "EnchantedForest_Layout",
+      "width": 90,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EnchantedForest",
+      "border_filepath": "data/layouts/EnchantedForest/border.bin",
+      "blockdata_filepath": "data/layouts/EnchantedForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP2",
+      "name": "NewMap2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NewMap2/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap2/map.bin"
     }
   ]
 }

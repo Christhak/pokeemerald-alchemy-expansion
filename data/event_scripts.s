@@ -1074,3 +1074,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/Descend/scripts.inc"
+
+	.include "data/maps/EnchantedForest/scripts.inc"
+	.include "data/maps/NewMap1/scripts.inc"
+ 	.include "data/maps/NewMap2/scripts.inc"

@@ -90,7 +90,7 @@ static void InitPlayerTrainerId(void)
 // L=A isnt set here for some reason.
 static void SetDefaultOptions(void)
 {
-    gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_MID;
+    gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_FAST;
     gSaveBlock2Ptr->optionsWindowFrameType = 0;
     gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_MONO;
     gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
@@ -123,10 +123,16 @@ static void ClearFrontierRecord(void)
     gSaveBlock2Ptr->frontier.opponentNames[0][0] = EOS;
     gSaveBlock2Ptr->frontier.opponentNames[1][0] = EOS;
 }
-
+/*
 static void WarpToTruck(void)
 {
     SetWarpDestination(MAP_GROUP(INSIDE_OF_TRUCK), MAP_NUM(INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    WarpIntoMap();
+}*/
+
+static void WarpToTruck(void)
+{
+    SetWarpDestination(MAP_GROUP(NEW_MAP1), MAP_NUM(NEW_MAP1), WARP_ID_NONE, -1, -1);
     WarpIntoMap();
 }
 

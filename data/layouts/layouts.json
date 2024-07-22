@@ -4436,7 +4436,7 @@
       "name": "NewMap1_Layout",
       "width": 6,
       "height": 6,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_SecretBase",
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/NewMap1/border.bin",
       "blockdata_filepath": "data/layouts/NewMap1/map.bin"

@@ -262,7 +262,9 @@ Route101_EventScript_BirchsBag1::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route101_EventScript_HideMayInBedroom
 	call_if_eq VAR_RESULT, FEMALE, Route101_EventScript_HideBrendanInBedroom
-	warp MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 6, 5
+	setflag FLAG_DEFEATED_DEWFORD_GYM
+	setflag FLAG_BADGE02_GET
+	warp MAP_DESCEND, 8, 14
 	waitstate
 	release
 	end
@@ -289,8 +291,8 @@ Route101_Text_PleaseHelp1:
 	.string "There's a POKé BALL!$"
 
 Route101_Text_DontLeaveMe1:
-	.string "Wh-Where are you going?!\n"
-	.string "Don't leave me like this!$"
+	.string "That bag may contain something useful!\n"
+	.string "Rummage it!$"
 
 Route101_Text_YouSavedMe1:
 	.string "PROF. BIRCH: Whew…\p"

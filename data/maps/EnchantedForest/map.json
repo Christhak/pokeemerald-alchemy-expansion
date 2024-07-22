@@ -2,11 +2,11 @@
   "id": "MAP_ENCHANTED_FOREST",
   "name": "EnchantedForest",
   "layout": "LAYOUT_ENCHANTED_FOREST",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_VIRIDIAN_FOREST",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
-  "requires_flash": false,
+  "requires_flash": true,
   "weather": "WEATHER_FOG_DIAGONAL",
-  "map_type": "MAP_TYPE_SECRET_BASE",
+  "map_type": "MAP_TYPE_NONE",
   "allow_cycling": false,
   "allow_escaping": true,
   "allow_running": true,
@@ -21,7 +21,7 @@
       "x": 89,
       "y": 73,
       "elevation": 0,
-      "dest_map": "MAP_ENCHANTED_FOREST",
+      "dest_map": "MAP_DESCEND",
       "dest_warp_id": "0"
     }
   ],

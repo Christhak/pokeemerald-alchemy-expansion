@@ -35843,6 +35843,7 @@ static const u16 sPecharuntTeachableLearnset[] = {
 static const u16 sMageTeachableLearnset[] = {
     MOVE_FIREBALL,
     MOVE_FLAMEBREATH,
+    MOVE_FLASH,
     MOVE_UNAVAILABLE,
 };
 
@@ -35852,6 +35853,7 @@ static const u16 sMageTeachableLearnset[] = {
 static const u16 sSquireTeachableLearnset[] = {
     MOVE_FIREBALL,
     MOVE_FLAMEBREATH,
+    MOVE_FLASH,
     MOVE_UNAVAILABLE,
 };
 

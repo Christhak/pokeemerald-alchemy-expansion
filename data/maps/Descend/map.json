@@ -19,7 +19,7 @@
       "x": 8,
       "y": 13,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -52,7 +52,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "Route101_EventScript_PreventExitNorth1"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "Route101_EventScript_PreventExitNorth1"
+    }
   ],
   "bg_events": [
     {

@@ -3,10 +3,10 @@
   "name": "EnchantedForest",
   "layout": "LAYOUT_ENCHANTED_FOREST",
   "music": "MUS_RG_VIRIDIAN_FOREST",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ENCHANTED_FOREST",
   "requires_flash": true,
   "weather": "WEATHER_FOG_DIAGONAL",
-  "map_type": "MAP_TYPE_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": false,
   "allow_escaping": true,
   "allow_running": true,
@@ -19,7 +19,7 @@
   "warp_events": [
     {
       "x": 89,
-      "y": 73,
+      "y": 74,
       "elevation": 0,
       "dest_map": "MAP_DESCEND",
       "dest_warp_id": "0"

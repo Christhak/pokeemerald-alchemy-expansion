@@ -24,6 +24,20 @@ Descend_EventScript_AllPathSign::
 
 @	////////////////////////////////////////////////
 
+	@ State descriptions for VAR_DEX_UPGRADE_JOHTO_STARTER_STATE
+	@ 1: Beat Elite Four, Dex upgrade ready
+	@ 2: Received National Dex
+	@ 3: Left lab after receiving National Dex
+	@ 4: Entered lab after catching all Hoenn mons
+	@ 5: Birch told player to choose Johto starter
+	@ 6: Chose Johto starter
+
+	@ State descriptions for VAR_BIRCH_LAB_STATE
+	@ 1: Never occurs
+	@ 2: Chose starter
+	@ 3: Received starter in lab
+	@ 4: Defeated rival on Route 103
+	@ 5: Received pokedex
 
 Descend_EventScript_FerrymanM::
 	msgbox Ferryman_Text_WelcomeTraveler, MSGBOX_NPC
@@ -39,7 +53,6 @@ Route101_OnFrame1:
 	.2byte 0
 
 Route101_EventScript_HideMapNamePopup1::
-	setflag FLAG_HIDE_MAP_NAME_POPUP
 	setvar VAR_ROUTE101_STATE, 1
 	end
 
@@ -95,152 +108,13 @@ Route101_EventScript_PreventExitNorth1::
 	releaseall
 	end
 
-Route101_Movement_PreventExitSouth1:
-	walk_up
-	step_end
 
-Route101_Movement_PreventExitWest1:
-	walk_right
-	step_end
 
 Route101_Movement_PreventExitNorth1:
 	walk_down
 	step_end
 
-Route101_Movement_ZigzagoonChaseInCircles1:
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_down
-	walk_fast_down
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_up
-	walk_fast_up
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_down
-	walk_fast_down
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_up
-	walk_fast_up
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_down
-	walk_fast_down
-	walk_fast_left
-	walk_fast_left
-	step_end
 
-Route101_Movement_ZigzagoonChase11:
-	walk_fast_up
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_up
-	step_end
-
-@ Leftover data? This command is unused.
-	step_end
-
-Route101_Movement_ZigzagoonFaceBirch1:
-	walk_in_place_fast_left
-	walk_in_place_fast_left
-	walk_in_place_fast_left
-	walk_in_place_fast_left
-	step_end
-
-Route101_Movement_EnterScene1:
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_in_place_faster_left
-	step_end
-
-Route101_Movement_BirchRunInCircles1:
-	walk_fast_up
-	walk_fast_up
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_down
-	walk_fast_down
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_up
-	walk_fast_up
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_down
-	walk_fast_down
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_up
-	walk_fast_up
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_down
-	walk_fast_down
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	step_end
-
-Route101_Movement_BirchRunAway11:
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_up
-	walk_fast_up
-	step_end
-
-@ Leftover data? This command is unused.
-	step_end
-
-Route101_Movement_BirchFaceZigzagoon1:
-	walk_in_place_fast_right
-	walk_in_place_fast_right
-	walk_in_place_fast_right
-	walk_in_place_fast_right
-	step_end
-
-Route101_Movement_Unused11:
-	walk_up
-	walk_up
-	step_end
-
-Route101_Movement_Unused21:
-	walk_up
-	walk_left
-	walk_up
-	step_end
-
-Route101_EventScript_Youngster1::
-	msgbox Route101_Text_TakeTiredPokemonToPokeCenter, MSGBOX_NPC
-	end
-
-Route101_EventScript_Boy1::
-	msgbox Route101_Text_WildPokemonInTallGrass, MSGBOX_NPC
-	end
-
-Route101_EventScript_RouteSign1::
-	msgbox Route101_Text_RouteSign, MSGBOX_SIGN
-	end
 
 Route101_EventScript_BirchsBag1::
 	lock
@@ -248,10 +122,6 @@ Route101_EventScript_BirchsBag1::
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_RESCUED_BIRCH
 	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_ZIGZAGOON
-	setobjectxy OBJ_EVENT_ID_PLAYER, 6, 13
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
 	special ChooseStarter
 	waitstate
 	special HealPlayerParty
@@ -271,64 +141,17 @@ Route101_EventScript_BirchsBag1::
 	release
 	end
 
-Route101_EventScript_HideMayInBedroom1::
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
-	return
-
-Route101_EventScript_HideBrendanInBedroom1::
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
-	return
-
-Route101_Movement_BirchApproachPlayer1:
-	walk_right
-	step_end
-
-Route101_Text_HelpMe1:
-	.string "H-help me!$"
-
-Route101_Text_PleaseHelp1:
-	.string "Hello! You over there!\n"
-	.string "Please! Help!\p"
-	.string "In my BAG!\n"
-	.string "There's a POKé BALL!$"
 
 Route101_Text_DontLeaveMe1:
 	.string "That bag may contain something useful!\n"
 	.string "Rummage it!$"
 
-Route101_Text_YouSavedMe1:
-	.string "PROF. BIRCH: Whew…\p"
-	.string "I was in the tall grass studying wild\n"
-	.string "POKéMON when I was jumped.\p"
-	.string "You saved me.\n"
-	.string "Thanks a lot!\p"
-	.string "Oh?\p"
-	.string "Hi, you're {PLAYER}{KUN}!\p"
-	.string "This is not the place to chat, so come\n"
-	.string "by my POKéMON LAB later, okay?$"
-
-Route101_Text_TakeTiredPokemonToPokeCenter1:
-	.string "If POKéMON get tired, take them to\n"
-	.string "a POKéMON CENTER.\p"
-	.string "There's a POKéMON CENTER in OLDALE\n"
-	.string "TOWN right close by.$"
-
-Route101_Text_WildPokemonInTallGrass1:
-	.string "Wild POKéMON will jump out at you in\n"
-	.string "tall grass.\p"
-	.string "If you want to catch POKéMON, you have\n"
-	.string "to go into the tall grass and search.$"
-
-Route101_Text_RouteSign1:
-	.string "ROUTE 101\n"
-	.string "{UP_ARROW} OLDALE TOWN$"
-
 Ferryman_Text_WelcomeTraveler:
 	.string "Ah, another soul ready for their journey.\n"
 	.string "Beyond this cave, a new life awaits you.\p"
-	.string "The paths you take will define your destiny,\n"
-	.string "so choose wisely and trust your instincts.\p"
-	.string "Embark on afterlife and embrace the unknown.\n"
+	.string "The paths you take will mold your destiny,\n"
+	.string "so choose wisely and trust your guts.\p"
+	.string "Embark on your afterlife.\n"
 	.string "May you find what you seek...\p"
 	.string "You have received Flash!$"
 

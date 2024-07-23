@@ -1710,6 +1710,22 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ENCHANTED_FOREST",
+      "name": "ENCHANTED FOREST",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_DESCEND",
+      "name": "DESCEND",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }

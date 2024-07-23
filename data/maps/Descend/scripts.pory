@@ -25,7 +25,9 @@ Descend_EventScript_AllPathSign::
 @	////////////////////////////////////////////////
 
 
-
+Descend_EventScript_FerrymanM::
+	msgbox Ferryman_Text_WelcomeTraveler, MSGBOX_NPC
+	end
 
 
 Route101_OnTransition1:
@@ -68,7 +70,7 @@ Route101_EventScript_StartBirchRescue1::
 
 Route101_EventScript_PreventExitSouth1::
 	lockall
-	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
+	msgbox Route101_Text_DontLeaveMe1, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitSouth
 	waitmovement 0
@@ -77,7 +79,7 @@ Route101_EventScript_PreventExitSouth1::
 
 Route101_EventScript_PreventExitWest1::
 	lockall
-	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
+	msgbox Route101_Text_DontLeaveMe1, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitWest
 	waitmovement 0
@@ -86,7 +88,7 @@ Route101_EventScript_PreventExitWest1::
 
 Route101_EventScript_PreventExitNorth1::
 	lockall
-	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
+	msgbox Route101_Text_DontLeaveMe1, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitNorth
 	waitmovement 0
@@ -321,6 +323,14 @@ Route101_Text_RouteSign1:
 	.string "ROUTE 101\n"
 	.string "{UP_ARROW} OLDALE TOWN$"
 
+Ferryman_Text_WelcomeTraveler:
+	.string "Ah, another soul ready for their journey.\n"
+	.string "Beyond this cave, a new life awaits you.\p"
+	.string "The paths you take will define your destiny,\n"
+	.string "so choose wisely and trust your instincts.\p"
+	.string "Embark on afterlife and embrace the unknown.\n"
+	.string "May you find what you seek...\p"
+	.string "You have received Flash!$"
 
 
 

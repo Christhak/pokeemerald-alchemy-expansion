@@ -303,7 +303,7 @@ Ferryman_Text_WelcomeTraveler:
 # 152 "data/maps/Descend/scripts.pory"
 	.string "The paths you take will mold your destiny,\n"
 # 153 "data/maps/Descend/scripts.pory"
-	.string "so choose wisely annd trust your guts.\p"
+	.string "so choose wisely and trust your guts.\p"
 # 154 "data/maps/Descend/scripts.pory"
 	.string "Embark on your afterlife.\n"
 # 155 "data/maps/Descend/scripts.pory"

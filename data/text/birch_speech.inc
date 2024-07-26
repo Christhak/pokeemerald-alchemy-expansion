@@ -52,8 +52,9 @@ gText_Birch_WhatsYourName::
     .string "Your past is now insignificant, and\n"
     .string "you stand on the brink of a new destiny.\p"
     .string "To start anew, you need a name\n"
-    .string "worthy of someone who will bear\n"
+    .string "worthy of someone who will bear\p"
     .string "the weight of the universe.\n"
+    .string "\p"
     .string "What name shall you claim for this\n"
     .string "new chapter in the grand tapestry?$"
 	

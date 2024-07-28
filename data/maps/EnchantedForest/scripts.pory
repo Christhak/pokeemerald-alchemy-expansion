@@ -1,2 +1,35 @@
-mapscripts EnchantedForest_MapScripts {
-}
+  raw `
+  
+  
+   EnchantedForest_MapScripts::
+	.byte 0
+
+
+
+Enchanted_EventScript_SahiraEOC::
+	msgbox EnchantedForest_Text_SahiraEndOfContent, MSGBOX_NPC
+	end
+
+
+
+
+
+
+EnchantedForest_Text_SahiraEndOfContent:
+    .string "SAHIRA: Well done, {PLAYER}{KUN}!\n"
+    .string "You made it out of the Enchanted Forest!\p"
+    .string "Thank you for supporting our\n"
+    .string "early version of the game.\p"
+    .string "We appreciate your patience\n"
+    .string "with any flaws you may have found\p"
+    .string "or will encounter.\n"
+    .string "=p\p"
+    .string "This is where the current content ends.\n"
+    .string "\p"
+    .string "Please provide feedback on the game\n"
+    .string "and what you hope to see in the future.\p"
+    .string "Shino gives his regards, he wish you try\n"
+    .string "the next version on distant future!$"
+
+
+`

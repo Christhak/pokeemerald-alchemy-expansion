@@ -630,7 +630,9 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 	addobject LOCALID_SCIENTIST
 # 316 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 317 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+#ifdef BUGFIX
+	releaseall
+#endif
 	end
 # 318 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 

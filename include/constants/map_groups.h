@@ -596,6 +596,7 @@
 #define MAP_ENCHANTED_FOREST (1 | (34 << 8))
 #define MAP_NEW_MAP1         (2 | (34 << 8))
 #define MAP_NEW_MAP2         (3 | (34 << 8))
+#define MAP_DRAGONVALLEY     (4 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 

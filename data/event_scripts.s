@@ -1080,3 +1080,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/EnchantedForest/scripts.inc"
 	.include "data/maps/NewMap1/scripts.inc"
  	.include "data/maps/NewMap2/scripts.inc"
+
+	.include "data/maps/dragonvalley/scripts.inc"

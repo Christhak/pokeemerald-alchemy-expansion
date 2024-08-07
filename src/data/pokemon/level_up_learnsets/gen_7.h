@@ -23175,6 +23175,8 @@ static const struct LevelUpMove sPecharuntLevelUpLearnset[] = {
 static const struct LevelUpMove sMageLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FIREBALL),
     LEVEL_UP_MOVE( 1, MOVE_FLAMEBREATH),
+    LEVEL_UP_MOVE( 1, MOVE_SHADOW_STRIKE),
+    LEVEL_UP_MOVE( 1, MOVE_BACK_STAB),
     LEVEL_UP_MOVE( 99, MOVE_SEARING_SHOT),
     LEVEL_UP_END
 };
@@ -23183,6 +23185,7 @@ static const struct LevelUpMove sMageLevelUpLearnset[] = {
 static const u16 sSquireLevelUpLearnset[] = {
     MOVE_FIREBALL,
     MOVE_FLAMEBREATH,
+    MOVE_SHADOW_STRIKE,
     MOVE_UNAVAILABLE,
 };
 

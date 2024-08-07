@@ -4450,6 +4450,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/NewMap2/border.bin",
       "blockdata_filepath": "data/layouts/NewMap2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAGONVALLEY",
+      "name": "dragonvalley_Layout",
+      "width": 30,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/dragonvalley/border.bin",
+      "blockdata_filepath": "data/layouts/dragonvalley/map.bin"
     }
   ]
 }

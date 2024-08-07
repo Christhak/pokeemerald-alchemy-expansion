@@ -20715,6 +20715,50 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboMoves = {COMBO_STARTER_TOXIC},
     },
 
+
+    [MOVE_SHADOW_STRIKE] =
+    {
+        .name = COMPOUND_STRING("Shadow Stike"),
+        .description = COMPOUND_STRING(
+            "Deal 70 physical damage\n"
+            "then move back 1 position."),
+        .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,
+        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 65 : 50,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 69,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .zMove = { .powerOverride = 160 },
+        .argument = STATUS1_BURN,
+        .contestEffect = CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_TOXIC},
+    },
+    [MOVE_BACK_STAB] =
+    {
+        .name = COMPOUND_STRING("Back stab"),
+        .description = COMPOUND_STRING(
+            "Deal 40 physical damage and Poison (2) the enemy frontline.\n"
+            " If enemy team swapped this turn, unswap and double the damage and poison."),
+        .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,
+        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 65 : 50,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 69,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .zMove = { .powerOverride = 160 },
+        .argument = STATUS1_BURN,
+        .contestEffect = CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_TOXIC},
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

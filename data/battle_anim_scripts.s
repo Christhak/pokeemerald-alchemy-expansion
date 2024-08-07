@@ -17611,6 +17611,55 @@ FlameBreathCreateFlames:
 	delay 2
 	return
 
+Move_SHADOW_STRIKE:
+	loadspritegfx ANIM_TAG_SMALL_EMBER
+	monbg ANIM_DEF_PARTNER
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 0, 2, 46, 1
+	delay 6
+	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	panse SE_M_FLAMETHROWER, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
+	call FlameBreathCreateFlames
+	call FlameBreathCreateFlames;
+
+	call FlameBreathCreateFlames;
+
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 43, 1
+	call FlameBreathCreateFlames;
+	call FlameBreathCreateFlames;
+	call FlameBreathCreateFlames;
+
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	end
+
+	Move_BACK_STAB:
+	loadspritegfx ANIM_TAG_SMALL_EMBER
+	monbg ANIM_DEF_PARTNER
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 0, 2, 46, 1
+	delay 6
+	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	panse SE_M_FLAMETHROWER, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
+	call FlameBreathCreateFlames
+	call FlameBreathCreateFlames;
+
+	call FlameBreathCreateFlames;
+
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 43, 1
+	call FlameBreathCreateFlames;
+	call FlameBreathCreateFlames;
+	call FlameBreathCreateFlames;
+	
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	end
+
+
 SetImpactBackground:
 	delay 2
 	createvisualtask AnimTask_IsContest, 2
